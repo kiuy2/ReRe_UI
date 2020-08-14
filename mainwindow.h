@@ -2,9 +2,14 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QScrollArea>
+#include <QPushButton>
 #include <QObject>
 #include <QInputDialog>
 #include <QMessageBox>
+#include <QSize>
+#include <QLayout>
+
 #define Kor(str) QString::fromLocal8Bit(str)
 
 QT_BEGIN_NAMESPACE
@@ -20,6 +25,7 @@ public:
     ~MainWindow();
 
 private slots:
+    void Init();
     void on_srtopen_clicked();
     void on_srtadd_clicked();
 
