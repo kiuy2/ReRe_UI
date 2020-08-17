@@ -25,9 +25,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void Init();
-    void on_srtopen_clicked();
-    void on_srtadd_clicked();
 
 private:
     Ui::MainWindow *ui;
